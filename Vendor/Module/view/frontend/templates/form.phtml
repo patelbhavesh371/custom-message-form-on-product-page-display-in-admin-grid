@@ -1,0 +1,10 @@
+<?php if ($block->isCustomerLoggedIn()): ?>
+    <form id="customer-product-message" method="post" action="<?= $block->getFormActionUrl() ?>">
+        <?= $block->getBlockHtml('formkey') ?>
+        <input type="hidden" name="product_id" value="<?= (int)$block->getProductId() ?>" />
+        <textarea name="message" required placeholder="Your message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+<?php else: ?>
+    <p>Please <a href="<?= $block->getLoginUrl() ?>">login</a> to send a message.</p>
+<?php endif; ?>

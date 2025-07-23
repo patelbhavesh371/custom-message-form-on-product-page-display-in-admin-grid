@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	    <add id="Vendor_Module::messages"
+		     title="Customer Product Messages"
+		     module="Vendor_Module"
+		     sortOrder="10"
+		     parent="Magento_Backend::content"
+		     action="vendor_module/message/index"
+		     resource="Vendor_Module::messages"/>
+	</menu>
+</config>
